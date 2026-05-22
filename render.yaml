@@ -3,7 +3,7 @@ services:
     name: johnbryan-frontend
     env: node
     buildCommand: npm install --include=dev && npm run build
-    publishDirectory: dist/ipt-2026-frontend
+    publishDirectory: dist/ipt-2026-frontend/browser
     envVars:
       - key: NODE_ENV
         value: production

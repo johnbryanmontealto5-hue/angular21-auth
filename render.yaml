@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: johnbryan-frontend
+    env: node
+    buildCommand: npm install --include=dev && npm run build
+    publishDirectory: dist/ipt-2026-frontend
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NPM_CONFIG_PRODUCTION
+        value: "false"
